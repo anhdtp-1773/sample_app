@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t ".the" %>
+    <%= link_to t(".ruby_on_rails_tutorial"), Settings.url_railstutorial %>
+    <%= t ".by" %>
+    <%= link_to t(".michael_hartl"), Settings.url_michael_hartl %>
+  </small>
+  <nav>
+    <ul>
+      <l><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <%= link_to t(".news"), Settings.url_michael_hartl %></li>
+    </ul>
+  </nav>
+</footer>
