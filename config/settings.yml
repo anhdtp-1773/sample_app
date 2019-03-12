@@ -8,3 +8,4 @@ url_michael_hartl: "http://www.michaelhartl.com/"
 max_name_length: 50
 min_pass_lenght: 6
 max_email_lenght: 255
+size_gravatar: 80
