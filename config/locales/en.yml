@@ -44,6 +44,7 @@ en:
       home: "Home"
       help: "Help"
       login: "Login"
+
     header:
       sample_app: "sample app"
       home: "home"
@@ -54,6 +55,7 @@ en:
       setting: "Setting"
       log_out: "Log out"
       account: "Account"
+
     footer:
       about: "About"
       contact: "Contact"
@@ -63,9 +65,21 @@ en:
       news: "News"
 
   users:
+    index:
+      all_users: "All users"
+
     create:
       welcome_to_the_sample_app: "Welcome to the Sample App!"
+
+    show:
       user_not_found: "User not found!"
+
+    update:
+      profile_updated: "Profile updated"
+
+    destroy:
+      user_delete_succeed: "User delete succeed."
+      user_delete_failed: "User delete failed"
 
     new:
       sign_up: "Sign up"
@@ -73,15 +87,34 @@ en:
         "This will be a signup page for new users."
       confirmation: "Confirmation"
       create_my_account: "Create my account"
+
+    edit:
+      please_log_in: "Please log in."
+      edit_user: "Edit user"
+      confirmation: "Confirmation"
+      shared_or_error_messages: "shared/error_messages"
+      save_changes: "Save changes"
+      change: "change"
+      update_your_profile: "Update your profile"
+
+    form:
+      shared_or_error_messages: "shared/error_messages"
+
+    user:
+      you_sure: "Are you sure?"
+      delete: "delete"
+
   sessions:
     create:
       invalid_email_or_password_combination:
         "Invalid email/password combination"
+
     new:
       log_in: "Log in"
       sign_up_now: "Sign up now!"
       new_user: "New user?"
       remember_me_on_this_computer: "Remember me on this computer"
+
   shared:
     error_message:
       the_form_contains: "The form contains"
