@@ -69,7 +69,11 @@ en:
       all_users: "All users"
 
     create:
-      welcome_to_the_sample_app: "Welcome to the Sample App!"
+      please_check_your_email_to_activate_your_account:
+        "Please check your email to activate your account."
+      account_not_activated: "Account not activated."
+      check_ur_email_for_the_activation_link:
+        "Check your email for the activation link."
 
     show:
       user_not_found: "User not found!"
@@ -118,3 +122,17 @@ en:
   shared:
     error_message:
       the_form_contains: "The form contains"
+
+  user_mailer:
+    account_activation:
+      sample_app: "Sample App"
+      hi: "Hi,"
+      welcome_to_the_sample_app_click_the_link_to_activate_your_account:
+        "Welcome to the Sample App! Click on the link below to activate your account:"
+      active: "Activate"
+
+  account_activations:
+
+    edit:
+      account_activation: "Account activation"
+      invalid_activation_link: "Invalid activation link"
