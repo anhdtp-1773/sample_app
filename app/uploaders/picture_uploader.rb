@@ -1,6 +1,7 @@
 class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-  process resize_to_limit: [Settings.limit_picture]
+
+  process resize_to_limit: Settings.limit_picture
 
   storage :file
 

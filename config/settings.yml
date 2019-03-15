@@ -15,4 +15,4 @@ quantity_per_page: 10
 time_expired: 2
 max_content_length: 140
 size_picture: 5
-limit_picture: 400
+limit_picture: [400, 400]

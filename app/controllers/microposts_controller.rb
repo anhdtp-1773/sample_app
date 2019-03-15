@@ -3,7 +3,6 @@ class MicropostsController < ApplicationController
   before_action :correct_user, only: :destroy
 
   def create
-    byebug
     @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
       flash[:success] = t(".created")

@@ -268,7 +268,7 @@ DEPENDENCIES
   bootstrap (~> 4.0)
   bootstrap-sass (= 3.3.7)
   byebug
-  carrierwave
+  carrierwave (~> 1.0)
   chromedriver-helper
   coffee-rails (~> 4.2)
   config
