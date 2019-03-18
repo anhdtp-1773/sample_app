@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, :correct_user, only: %i(edit update)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
-  before_action :load_user, except: %i(index new create)
+  before_action :load_user, except: %i(new create index)
+  before_action :logged_in_user, except: %i(new create show)
 
   def index
     @users = User.page(params[:page]).per Settings.quantity_per_page
@@ -45,6 +46,18 @@ class UsersController < ApplicationController
       flash[:error] = t(".user_delete_failed")
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t(".following")
+    @users = @user.following.page(params[:page]).per Settings.quantity_per_page
+    render "show_follow"
+  end
+
+  def followers
+    @title = t(".followers")
+    @users = @user.followers.page(params[:page]).per Settings.quantity_per_page
+    render "show_follow"
   end
 
   private

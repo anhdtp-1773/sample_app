@@ -77,6 +77,10 @@ en:
     destroy:
       user_delete_succeed: "User delete succeed."
       user_delete_failed: "User delete failed"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
     new:
       sign_up: "Sign up"
       this_will_be_a_signup_page_for_new_users:
@@ -93,6 +97,13 @@ en:
     user:
       you_sure: "Are you sure?"
       delete: "delete"
+    show_follow:
+      view_my_profile: "view my profile"
+      microposts: "Microposts:"
+    unfollow:
+      unfollow: "Unfollow"
+    follow:
+      follow: "Follow"
 
   sessions:
     create:
